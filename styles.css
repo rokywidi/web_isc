@@ -1,0 +1,334 @@
+/* Reset dasar untuk margin dan padding */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Penataan dasar untuk body */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Aturan animasi untuk teks */
+.fade-in-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-text.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Aturan khusus untuk section "Apa Itu ISC?" */
+#beranda h2,
+#beranda p {
+  line-height: 2;
+}
+
+#beranda .container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+#beranda {
+  background: linear-gradient(to bottom, #f4f4f4, #5fc0e0);
+
+  margin: 0;
+}
+
+#tentang {
+  background: linear-gradient(180deg, #5fc0e0, #f4f4f4);
+  margin: 0;
+}
+#galeri {
+  background: linear-gradient(to bottom, #f4f4f4, #5fc0e0);
+  margin: 0;
+}
+#kontak {
+  background: linear-gradient(180deg, #5fc0e0, #f4f4f4);
+  margin: 0;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #0951bd;
+  color: #fff;
+  padding: 17px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Agar container header memiliki tinggi yang pas untuk logo */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+/* Container Logo dengan ukuran 50px */
+.logo {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav {
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f4f4f4;
+  text-shadow: 0 0 10px #f4f4f4;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Sections */
+.section {
+  padding: 100px 0 80px;
+  text-align: center;
+  background: #f4f4f4;
+  margin-top: 70px;
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Tentang Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.feature {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+/* Galeri */
+.gallery .images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery .images img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery .images img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Lightbox */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1500;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+#caption {
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+}
+
+/* Kontak */
+.contact p,
+.contact a {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #0951bd;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/* Animasi Masuk (Fade In) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    display: none;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 80%;
+  }
+
+  .gallery .images img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Kelas aktif untuk tampilan mobile */
+.nav-active {
+  display: flex;
+}

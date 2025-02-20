@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informatic Study Club (ISC)</title>
+    <!-- Mengimpor font Montserrat dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <img src="asset/23.png" alt="Logo ISC" />
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+          <!-- Hamburger menu untuk tampilan mobile -->
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="beranda" class="section">
+      <div class="container">
+        <h2 class="fade-in-text">Apa Itu ISC?</h2>
+        <p class="fade-in-text">
+          ISC Informatic Study Club adalah organisasi belajar di Universitas Pamulang yang mengumpulkan mahasiswa dengan minat di bidang teknologi. Melalui empat bidang utama, yaitu web development, data science, UI/UX design, dan English
+          upskill, ISC menyediakan platform untuk mengasah keterampilan teknis serta soft skills. Organisasi ini menyelenggarakan workshop, seminar, dan pelatihan praktis yang menghubungkan teori dengan pengalaman industri. Dengan dukungan
+          mentor profesional dan kerja sama antar anggota, ISC mendorong inovasi dan pengembangan diri. Anggota mendapatkan kesempatan mengeksplorasi solusi digital, meningkatkan kemampuan bahasa Inggris, serta mempersiapkan diri menghadapi
+          tantangan global di era digital. Organisasi ini terus berkembang untuk menciptakan inovator masa depan unggul.
+        </p>
+      </div>
+    </section>
+
+    <section id="tentang" class="section">
+      <div class="container">
+        <h2 class="fade-in-text">Tentang ISC</h2>
+        <p class="fade-in-text">ISC Informatic Study Club adalah wadah pembelajaran dan pengembangan diri bagi mahasiswa di Universitas Pamulang yang berfokus pada empat bidang utama, yaitu:</p>
+        <div class="features fade-in-text">
+          <div class="feature fade-in-text">
+            <h3>Web Development</h3>
+            <p>web development adalah salah satu bidang di ISC yang berfokus membuat dan pemeliharaan web</p>
+          </div>
+          <div class="feature fade-in-text">
+            <h3>Data Science</h3>
+            <p>Data Science berfokus pada eksplorasi, penelitian, dan penerapan teknologi berbasis data</p>
+          </div>
+          <div class="feature fade-in-text">
+            <h3>UI/UI Disain</h3>
+            <p>UI/UX Desain berfokus pada tampilan antarmuka UI dan pengalaman pengguna UX</p>
+          </div>
+          <div class="feature fade-in-text">
+            <h3>English Upskill</h3>
+            <p>English Upskill berfokus buat asah kemampuan bahasa inggrismu</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeri" class="section">
+      <div class="container gallery">
+        <h2 class="fade-in-text">Galeri Kegiatan</h2>
+        <br />
+        <div class="images fade-in-text">
+          <img src="asset/20240927_025546jpeg (1).jpg" alt="Kegiatan 1" class="gallery-img" />
+          <img src="asset/20240927_025647jpeg.jpg" alt="Kegiatan 2" class="gallery-img" />
+          <img src="asset/20241010_094256.jpg" alt="Kegiatan 3" class="gallery-img" />
+          <img src="asset/20241010_094529.jpg" alt="Kegiatan 3" class="gallery-img" />
+          <img src="asset/20241018_024252.jpg" alt="Kegiatan 3" class="gallery-img" />
+          <img src="asset/20241018_024256.jpg" alt="Kegiatan 3" class="gallery-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal untuk lightbox gallery -->
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img" />
+      <div id="caption"></div>
+    </div>
+
+    <section id="kontak" class="section">
+      <div class="container contact">
+        <h2 class="fade-in-text">Kontak Kami</h2>
+        <p class="fade-in-text">
+          Instagram:
+          <a href="https://www.instagram.com/isc.unpam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@isc.unpam</a>
+        </p>
+        <p class="fade-in-text">
+          Whatsapp:
+          <a href="https://api.whatsapp.com/send/?phone=6289629391222&text&type=phone_number&app_absent=0https://api.whatsapp.com/send/?phone=6289629391222&text&type=phone_number&app_absent=0" target="_blank">Informatic Study Club</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 ISC - Universitas Pamulang.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
